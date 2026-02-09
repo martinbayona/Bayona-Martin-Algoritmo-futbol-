@@ -9,7 +9,7 @@ body {
 
 h1 {
   font-size: 2.5em;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .subtitulo {
@@ -33,6 +33,7 @@ button {
   font-size: 1em;
   cursor: pointer;
   transition: all 0.2s ease;
+  min-width: 180px;
 }
 
 button:hover {
@@ -42,6 +43,7 @@ button:hover {
 
 .vs {
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 h2 {
@@ -49,7 +51,7 @@ h2 {
 }
 
 ol {
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
   text-align: left;
   padding-left: 20px;
