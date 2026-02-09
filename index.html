@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LaLigaMash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>LaLigaMash</h1>
+  <p class="subtitulo">
+    ¿Qué equipo es mejor?  
+    <br>
+    (Según tu criterio personal)
+  </p>
+
+  <div class="comparacion">
+    <button id="equipoA" onclick="votar(equipoA)"></button>
+    <span class="vs">VS</span>
+    <button id="equipoB" onclick="votar(equipoB)"></button>
+  </div>
+
+  <h2>Ranking</h2>
+  <ol id="ranking"></ol>
+
+  <script src="script.js"></script>
+  <script>
+    nuevaComparacion();
+  </script>
+
+</body>
+</html>
