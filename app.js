@@ -1,4 +1,4 @@
-// Lista de equipos (equivalente a cursos en CourseMash)
+// Lista de equipos (elementos del algoritmo)
 const equipos = [
   { nombre: "Real Madrid", puntos: 0 },
   { nombre: "FC Barcelona", puntos: 0 },
@@ -13,7 +13,7 @@ const equipos = [
 let equipoA;
 let equipoB;
 
-// Selección aleatoria A/B
+// Generar comparación A/B
 function nuevaComparacion() {
   let indices = [];
 
@@ -38,14 +38,12 @@ function votar(ganador) {
   nuevaComparacion();
 }
 
-// Ranking emergente
+// Actualizar ranking
 function actualizarRanking() {
   const lista = document.getElementById("ranking");
   lista.innerHTML = "";
 
-  const ordenados = [...equipos].sort(
-    (a, b) => b.puntos - a.puntos
-  );
+  const ordenados = [...equipos].sort((a, b) => b.puntos - a.puntos);
 
   ordenados.forEach((equipo, index) => {
     const li = document.createElement("li");
